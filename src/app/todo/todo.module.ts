@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { MainPageComponent } from './pages/main-page/main-page.component'
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [MainPageComponent],
+  exports: [MainPageComponent],
+  imports: [CommonModule],
 })
-export class TodoModule { }
+export class TodoModule {}
