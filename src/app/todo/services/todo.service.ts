@@ -22,4 +22,12 @@ export class TodoService {
       done: false,
     },
   ]
+
+  public deleteTaskById(task_id: string): void {
+    const newTaskList = this.tasks.filter((task) => {
+      return task.id !== task_id
+    })
+
+    this.tasks = newTaskList
+  }
 }
