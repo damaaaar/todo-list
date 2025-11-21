@@ -1,6 +1,4 @@
-import { Component } from '@angular/core'
-
-import { v4 as generateId } from 'uuid'
+import { Component, Input } from '@angular/core'
 
 import { Task } from '../../interfaces/task'
 
@@ -10,18 +8,6 @@ import { Task } from '../../interfaces/task'
   styleUrl: './tasks-list.component.css',
 })
 export class TasksListComponent {
-  public tasksList: Task[] = [
-    {
-      id: generateId(),
-      description: 'Sacar la basura',
-      priority: 10,
-      done: false,
-    },
-    {
-      id: generateId(),
-      description: 'Darle de comer al gato',
-      priority: 20,
-      done: false,
-    },
-  ]
+  @Input()
+  public taskList: Task[] = []
 }

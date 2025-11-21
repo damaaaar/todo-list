@@ -1,10 +1,16 @@
-<main class="container text-center">
+<main class="container text-center" style="width: 70%;">
 
   <section class="mt-4 mb-4">
 
     <h1>TODO List</h1>
 
-    <todo-tasks-list></todo-tasks-list>
+    <todo-tasks-list [taskList]="taskList"></todo-tasks-list>
+  </section>
+
+  <section class="mb-4">
+
+    <todo-tasks-form></todo-tasks-form>
+
   </section>
 
 </main>
